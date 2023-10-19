@@ -34,18 +34,22 @@ public class Methods {
 		// TODO: Draw the remaining rings of the bull's eye
 		// Blue ring with 3.0/4.0 the radius
 		// suggested rgb values: 0, 109, 219
-
+		
+		StdDraw.setPenColor(0, 109, 219); 
+		StdDraw.filledCircle(x, y, (3.0/4.0) * radius);
 		
 
 		// Red ring with 1.0/2.0 the radius
 		// suggested rgb values: 146, 0, 0
 
-		
+		StdDraw.setPenColor(146, 0, 0); 
+		StdDraw.filledCircle(x, y, (0.5 *radius));
 
 		// Yellow ring with 1.0/4.0 the radius
 		// suggested rgb values: 255, 255, 109
 
-		
+		StdDraw.setPenColor(255, 255, 109); 
+		StdDraw.filledCircle(x, y, (0.25 *radius));
 	}
 
 	/**
@@ -59,12 +63,21 @@ public class Methods {
 	 * @return the String which results from substituting all of the target
 	 *         characters in the source String with the replacement String
 	 */
-	public static String substituteAll(String source, char target, String replacement) {
+	public static char[] substituteAll(String source, char target, String replacement) {
 		String result = "";
 		// TODO: Finish this method
 		
+		public char[] toCharArray() {
+		char Source[] =  new char[source.length];
+		return Source
+		}
 		return result;
 	}
+
+	
+		// TODO Auto-generated method stub
+		
+	
 
 	/**
 	 * Compute the sum of elements in an array
